@@ -6,7 +6,9 @@ library(stringr)
 (recs=list.files(Recebido))
 #(recs=recs[str_detect(recs, "#10#") | str_detect(recs, "#9#") | str_detect(recs, "#8#")])
 #excluindo nota 8
-(recs=recs[str_detect(recs, "#10#") | str_detect(recs, "#9#")])
+#(recs=recs[str_detect(recs, "#10#") | str_detect(recs, "#9#")])
+#excluindo nota 9
+(recs=recs[str_detect(recs, "#10#")])
 
 (jabackup=list.files(Acer_recebido))
 
