@@ -4,7 +4,10 @@ library(stringr)
 (Recebido="D:\\System\\Data\\Arquivos de Programas RFB\\aplicação\\dados\\212121212121\\Lixo\\Cut\\outputs 2\\Exchange\\Recebido\\")
 (Acer_recebido="C:\\System\\Data\\Arquivos de Programas RFB\\IRPF2015\\aplicacao\\dados\\212121212121\\Lixo\\Cut\\outputs 2\\Exchange\\Backup Recebido (notas igual ou acima de 8)\\")
 (recs=list.files(Recebido))
-(recs=recs[str_detect(recs, "#10#") | str_detect(recs, "#9#") | str_detect(recs, "#8#")])
+#(recs=recs[str_detect(recs, "#10#") | str_detect(recs, "#9#") | str_detect(recs, "#8#")])
+#excluindo nota 8
+(recs=recs[str_detect(recs, "#10#") | str_detect(recs, "#9#")])
+
 (jabackup=list.files(Acer_recebido))
 
 #ver se tem tamanho=0 para excluir
