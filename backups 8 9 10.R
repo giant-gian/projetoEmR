@@ -5,9 +5,6 @@ library(stringr)
 (Acer_recebido="C:\\System\\Data\\Arquivos de Programas RFB\\IRPF2015\\aplicacao\\dados\\212121212121\\Lixo\\Cut\\outputs 2\\Exchange\\Backup Recebido (notas igual ou acima de 8)\\")
 (recs=list.files(Recebido))
 (recs=recs[str_detect(recs, "#9#") | str_detect(recs, "#8#") | str_detect(recs, "#7#") | str_detect(recs, "#6#")])
-=======
-(recs=recs[str_detect(recs, "#10#") |str_detect(recs, "#9#") | str_detect(recs, "#8#") | str_detect(recs, "#7#")])
->>>>>>> 0994ef2cde658f2c3ce61f80d01fa97664e1d52e
 #excluindo a nota 7
 #(recs=recs[str_detect(recs, "#10#") | str_detect(recs, "#9#") | str_detect(recs, "#8#")])
 #excluindo nota 8
