@@ -14,6 +14,8 @@ library(stringr)
 
 (jabackup=list.files(Acer_recebido))
 
+#Que chatice
+
 #ver se tem tamanho=0 para excluir
 jabackup[file.size(paste0(Acer_recebido,jabackup))==0]
 any(jabackup[file.size(paste0(Acer_recebido,jabackup))==0])
